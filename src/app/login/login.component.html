@@ -1,15 +1,21 @@
-<div>
-  <form class="example-form">
+<div class="login-box">
+
+  <mat-card>
+
     <mat-form-field>
-      <input type="text" id="txtUname" placeholder="username" />
+      <input matInput type="text" [(ngModel)]="username" placeholder="username" />
     </mat-form-field>
-    <br><br>
+
+    <br>
+
     <mat-form-field>
-      <input type="password" id="txtPassword" placeholder="password" />
+      <input matInput type="password" [(ngModel)]="password" placeholder="password" />
     </mat-form-field>
-    <br><br>
-    <mat-form-field>
-      <button mat-button color="primary">Login</button>
-    </mat-form-field>
-  </form>
+
+    <br>
+
+    <button mat-flat-button color="primary">Login</button>
+
+  </mat-card>
+
 </div>
